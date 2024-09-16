@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-color: #fef9d9;
+}
+.dashboard {
+	text-align: center;
+	.input-group {
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 800px;
+		.form-control:focus {
+			box-shadow: none;
+			border: 1px solid #c08b35;
+		}
+	}
+	th {
+		background-color: #e8b86d;
+		vertical-align: middle;
+	}
+	td {
+		word-break: break-all;
+	}
+}
+@media (max-width: 576px) {
+	.dashboard {
+		td {
+			padding: 0.25em;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.dashboard {
+		.input-group {
+			padding: 0 0.5em;
+		}
+	}
+}
